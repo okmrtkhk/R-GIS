@@ -1,36 +1,32 @@
-## libraryのインストール
+## GISデータベース
 
-innstall済みのパッケージ
+#### 国土数値情報ダウンロードサービス　
 
-- tidyverse
-- sf
-- jpmesh
-
-## 無料GISデータベース概要
-
-国土数値情報ダウンロードサービス　https://nlftp.mlit.go.jp/ksj/
+https://nlftp.mlit.go.jp/ksj/
 
 - 行政区境界（市町村）を基本に河川、湖沼（一部のダム湖を含む）、道路、鉄道などが基図データとして利用可能
 - 解像度が高い（海岸線の堤防なども含む）ので、広域地図として利用する際は簡略化が必要。そのまま使うと重い。全国図をそのままプロットすると普通に５分ぐらいかかる。
 - メッシュデータもある。jpmeshパッケージを用いることで緯度経度情報を付加できる
 
-Natural Earth https://www.naturalearthdata.com
+#### Natural Earth
+
+https://www.naturalearthdata.com
 
 - ３段階の縮尺で利用可能。
 - 都道府県レベルの地図が利用可能。ただし、都道府県名称が一部バグがあった。北方領土はロシア領。解像度は荒め。
 - 水深データも利用できる。
 
-ESRI 全国市町村界データ　https://www.esrij.com/products/japan-shp/
+#### ESRI 全国市町村界データ
+
+https://www.esrij.com/products/japan-shp/
 
 - ESRIの無料データ。一部の市町村がポリゴンになっておらず、結合できない。解像度は国土数値情報とNatural Earthとの間ぐらい。
 
-e-Stat 統計GIS https://www.e-stat.go.jp/gis/statmap-search?type=2
+#### e-Stat 統計GIS
+
+https://www.e-stat.go.jp/gis/statmap-search?type=2
 
 - 国勢調査の町丁レベルの小地域まで落とせる。行政区界として最小単位？
-
-
-
-
 
 ## 参考になりそうなサイト
 
