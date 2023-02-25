@@ -12,7 +12,7 @@ innstall済みのパッケージ
 
 - 行政区境界（市町村）を基本に河川、湖沼（一部のダム湖を含む）、道路、鉄道などが基図データとして利用可能
 - 解像度が高い（海岸線の堤防なども含む）ので、広域地図として利用する際は簡略化が必要。そのまま使うと重い。全国図をそのままプロットすると普通に５分ぐらいかかる。
-- メッシュデータもある。jpmeshパッケージを用いることで緯度経度情報を孵化できる
+- メッシュデータもある。jpmeshパッケージを用いることで緯度経度情報を付加できる
 
 Natural Earth https://www.naturalearthdata.com
 
@@ -60,20 +60,7 @@ https://tmizu23.github.io/R_GIS_tutorial/R_GIS_tutorial2018.9.3.html#425
 
 https://tmizu23.hatenablog.com/entry/20091215/1260868350
 
-WGS84 : 4326
+- WGS84 : 4326
+- JGD2011 : 6668
+- JGD2000 : 4612
 
-JGD2011 : 6668
-
-JGD2000 : 4612
-
-## コーディング
-
-### インポート
-
-```R
-sf::read_sf(path, options = "ENCODING=CP932")
-```
-
-Shift-JISの場合はoptionが必要
-
-### 
